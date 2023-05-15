@@ -1,10 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link th:href="@{'css/bootstrap.css'}" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-dark navbar-expand" style="background-color: #394867">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Index</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Add Item</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="mt-4">
+                <img src="https://png.pngtree.com/template/20220331/ourmid/pngtree-thanksgiving-earth-compact-laptop-banner-image_910162.jpg" width="1295" height="300">
+            </div>
+            <div class="mt-4">
+                <div class="col-12">
+                    <h1 class="text-center">Laptops</h1>
+                    <br>
+                    <div class="row row-cols-1 row-cols-md-4 g-3">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://www.mechta.kz/images/product/20591/30000003762_1-480.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lenovo Legion 5</h5>
+                                    <p class="card-text">16GB RAM 512GB SSD Intel Core I7</p>
+                                    <h4>339.990</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://www.mechta.kz/export/1cbitrix/import_files/d9/d9934fdc-a68f-11ed-a254-005056b6dbd7-480.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hp Victus 16</h5>
+                                    <p class="card-text">32GB RAM 1TB SSD Amd Ryzen 5</p>
+                                    <h4>339.990</h4>
+                                </div>
 
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://www.mechta.kz/export/1cbitrix/import_files/2f/2ffc78dd-6fba-11ed-a250-005056b6dbd7-480.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Acer Nitro 5</h5>
+                                    <p class="card-text">16GB RAM 512GB SSD Intel Core I7</p>
+                                    <h4>339.990</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://www.mechta.kz/images/product/71243/17200001248_1-480.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Asus Tuf Gaming F404</h5>
+                                    <p class="card-text">16GB RAM 512GB SSD Intel Core I5</p>
+                                    <h4>339.990</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" th:src="@{'js/bootstrap.bundle.js'}">
 </body>
 </html>
