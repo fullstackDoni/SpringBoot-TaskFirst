@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:insert="head.html">
     <meta charset="UTF-8">
     <title>SHOP.KZ</title>
-    <link th:href="@{'css/bootstrap.css'}" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="container">
@@ -47,7 +46,7 @@
                                     <h4 th:text="${item.price}"></h4>
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-success">Details</a>
+                                    <a th:href="@{'/item-details?id='+${item.id}}" class="btn btn-success">Details</a>
                                 </div>
                             </div>
                         </div>
@@ -62,6 +61,5 @@
         </div>
     </div>
 </div>
-<link rel="stylesheet" th:src="@{'js/bootstrap.bundle.js'}">
 </body>
 </html>

@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 
@@ -26,5 +27,11 @@ public class HomeController {
     @GetMapping(value = "/add-item")
     public String additem(){
         return "add-item";
+    }
+    @GetMapping(value = "/item-details")
+    public String getItem(@RequestParam(name = "id") int id,Model model){
+        Items items = DBManager.getItem(id);
+        model.addAttribute("item",items);
+        return "details";
     }
 }

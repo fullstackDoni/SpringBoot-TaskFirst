@@ -22,4 +22,12 @@ public class DBManager {
         id++;
         items.add(item);
     }
+    public static Items getItem(int id){
+        for(Items item:items){
+            if(item.getId() == id){
+                return item;
+            }
+        }
+        return null;
+    }
 }
